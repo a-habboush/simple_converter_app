@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit conversion app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="tabs">
+            <button>Length</button>
+            <button>Temp</button>
+            <button>Area</button>
+            <button>Volume</button>
+            <button>Weight</button>
+            <button>Time</button>
+        </div>
+        
+        <div class="content" id="length">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                    <option value="km">Kilometre</option>
+                    <option value="m">Metre</option>
+                    <option value="cm">Centimetre</option>
+                    <option value="mi">Mile</option>
+                    <option value="ya">Yard</option>
+                    <option value="ft">Foot</option>
+                    <option value="in">Inch</option>
+                </select>
+    
+        </div>
+
+        <div class="to_units">
+            <select name="Units" id="units">
+                <option value="km">Kilometre</option>
+                <option value="m">Metre</option>
+                <option value="cm">Centimetre</option>
+                <option value="mi">Mile</option>
+                <option value="ya">Yard</option>
+                <option value="ft">Foot</option>
+                <option value="in">Inch</option>
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+        </div>
+
+
+        <div class="content" id="temperature">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                    <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                    
+                </select>
+                
+        </div>
+        <div class="to_units">
+            <select name="Units" id="units">
+                <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+
+        </div>
+
+
+        
+        <div class="content" id="area">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                    <option value="sqcm">Square Centimetre (CM)^2</option>
+                    <option value="sqm">Square Metre (M)^2</option>
+                    <option value="sqkm">Square Kilometre (KM)^2</option>
+                    <option value="acre">Acre</option>
+                    <option value="sqi">Square Inch (I)^2</option>
+                    <option value="sqft">Square Foot (Ft)^2</option>
+                    <option value="sqy">Square Yard (Y)^2</option>
+                    <option value="sqmi">Square Mile (Mi)^2</option>
+
+                </select>
+                
+        </div>
+        <div class="to_units">
+            <select name="Units" id="units">
+                <option value="sqcm">Square Centimetre (CM)^2</option>
+                    <option value="sqm">Square Metre (M)^2</option>
+                    <option value="sqkm">Square Kilometre (KM)^2</option>
+                    <option value="acre">Acre</option>
+                    <option value="sqi">Square Inch (I)^2</option>
+                    <option value="sqft">Square Foot (Ft)^2</option>
+                    <option value="sqy">Square Yard (Y)^2</option>
+                    <option value="sqmi">Square Mile (Mi)^2</option>
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+
+
+        </div>
+
+
+        
+        <div class="content" id="volume">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                    <option value="cm3">Cubic Centimetre (CM)^3</option>
+                    <option value="m3">Cubic Metre (M)^3</option>
+                    <option value="i3">Cubic Inch (I)^3</option>
+                    <option value="ft3">Cubic Foot (Ft)^3</option>
+                    <option value="l">Litre (L)</option>
+                    <option value="gn">Gallon (G)</option>
+                    
+                </select>
+                
+        </div>
+        <div class="to_units">
+            <select name="Units" id="units">
+                <option value="cm3">Cubic Centimetre (CM)^3</option>
+                <option value="m3">Cubic Metre (M)^3</option>
+                <option value="i3">Cubic Inch (I)^3</option>
+                <option value="ft3">Cubic Foot (Ft)^3</option>
+                <option value="l">Litre (L)</option>
+                <option value="gn">Gallon (G)</option>
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+
+
+        </div>
+
+
+        
+        <div class="content" id="weight">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                    <option value="g">Gram (g)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="t">Tonne (t)</option>
+                    <option value="oz">Ounce (oz)</option>
+                    <option value="lb">Pound (lb)</option>
+                
+                </select>
+                
+        </div>
+        <div class="to_units">
+            <select name="Units" id="units">
+                <option value="g">Gram (g)</option>
+                <option value="kg">Kilogram (kg)</option>
+                <option value="t">Tonne (t)</option>
+                <option value="oz">Ounce (oz)</option>
+                <option value="lb">Pound (lb)</option>
+                
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+
+
+        </div>
+
+
+        
+        <div class="content" id="time">
+
+            <div class="from_textbox">
+            <p>From:</p> 
+            <input type="text"> 
+            </div>
+
+            <div class="to_textbox">
+            <p>To:</p> 
+            <input type="text" disabled>
+          </div>
+            
+            <div class="from_units">
+                <select name="Units" id="units">
+                   
+                    <option value="s">Second</option>
+                    <option value="min">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="wk">Week</option>
+                    <option value="mon">Month</option>
+                    <option value="year">Year</option>
+                    <option value="decade">Decade</option>
+             
+                </select>
+                
+        </div>
+        <div class="to_units">
+            <select name="Units" id="units">
+                
+                <option value="s">Second</option>
+                <option value="min">Minute</option>
+                <option value="hour">Hour</option>
+                <option value="day">Day</option>
+                <option value="wk">Week</option>
+                <option value="mon">Month</option>
+                <option value="year">Year</option>
+                <option value="decade">Decade</option>
+            </select>
+        </div>
+        
+            <h3 class="answer"></h3>
+
+
+        </div>
+
+
+    </div>
+
+
+    
+</body>
+</html>
