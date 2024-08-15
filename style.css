@@ -1,14 +1,14 @@
 .container{
-    background-color: darkgoldenrod;
+    background-color: rgb(145, 203, 149);
     display: grid;
     max-width: 40em;
     min-width: 20em;
     grid-template-columns: 30em;
-    row-gap: 2em;
+    row-gap: 3em;
     grid-template-rows: 5em 10em;
     justify-content: center;
-    padding:4em;
-    margin-top: 10em;
+    padding: 1em 4em ;
+    margin-top: 15em;
     
 }
 
@@ -19,19 +19,25 @@ body{
 
 
 .tabs{
-    
+    width: 100%;
     display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
+   align-items: center;
+   
    
 }
 
-.tabs button{
-    flex-grow: 1;
-    min-height: 2em;
-    max-height: 4em;
-    min-width: 2.5em;
-    max-width: 6em;
+.tab_btn{
+font-size: 16px;
+border: none;
+padding: 1em;
+cursor: pointer;
 }
+
+.tab_btn.active{
+    background-color: rgb(145, 203, 149);
+}
+
 
 .content{
 
@@ -43,7 +49,8 @@ body{
     
 }
 
+
 .content.active{
 display: grid;
     
-}
+}  
