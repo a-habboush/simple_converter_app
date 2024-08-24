@@ -4,11 +4,10 @@
     max-width: 40em;
     min-width: 20em;
     grid-template-columns: 30em;
-    row-gap: 3em;
-    grid-template-rows: 5em 10em;
-    justify-content: center;
-    padding: 1em 4em ;
-    margin-top: 15em;
+    row-gap: 2em;
+    grid-template-rows: 5em 4em 2em 4em;
+    padding: 3em 4em ;
+    margin-top: 12em;
     
 }
 
@@ -24,7 +23,6 @@ body{
    justify-content: space-around;
    align-items: center;
    
-   
 }
 
 .tab_btn{
@@ -39,18 +37,41 @@ cursor: pointer;
 }
 
 
-.content{
+.textboxes{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.units{
 
     display:none;
-    min-width: 10em;
-    column-gap: 5em;
-    grid-template-columns: repeat(2, 15em); 
-    grid-template-rows: 5em 5em;
+   justify-content: space-between;
+   gap: 0;
+  
     
 }
 
 
-.content.active{
-display: grid;
+.units.active{
+display: flex;
     
 }  
+
+.convertWrapper{
+    display: flex;
+    grid-template-columns: 30%;
+
+    justify-content: center;
+}
+
+
+#convertButton{
+   
+    max-width: 10em;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
