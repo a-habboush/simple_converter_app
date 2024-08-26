@@ -24,12 +24,12 @@
     
         <div class="textboxes">
 
-            <div class="from_textbox">
+            <div>
             <p>From:</p> 
             <input type="text" pattern="[0-9]*" inputmode="numeric" id="inputTextbox"> 
             </div>
 
-            <div class="to_textbox">
+            <div>
             <p>To:</p> 
             <input type="text" readonly id="outputTextbox">
             </div>
@@ -63,7 +63,7 @@
     
 
 
-        <div class="units" id="temp_units">
+        <div class="units">
 
                 <select name="Units" id="units">
                     <option value="c">Celsius</option>
@@ -74,15 +74,15 @@
                 
             <select name="Units" id="units">
                 <option value="c">Celsius</option>
-                    <option value="f">Fahrenheit</option>
-                    <option value="k">Kelvin</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
             </select>
         
         </div>
 
 
         
-        <div class="units" id="area_units">
+        <div class="units">
  
                 <select name="Units" id="units">
                     <option value="sqm">Square Metre (M)^2</option>
@@ -105,59 +105,59 @@
         </div>
 
 
-        <div class="units" id="volume_units">
+        <div class="units">
 
             <select name="Units" id="units">
-                <option value="cm3">Cubic Centimetre (CM)^3</option>
-                <option value="m3">Cubic Metre (M)^3</option>
-                <option value="i3">Cubic Inch (I)^3</option>
-                <option value="ft3">Cubic Foot (Ft)^3</option>
-                <option value="l">Litre (L)</option>
-                <option value="gn">Gallon (G)</option>
+                <option value="m3">Cubic Metre (m)^3</option>
+                <option value="ml">Millilitre (ml)</option>
+                <option value="l">Litre (l)</option>
+                <option value="floz">Fluid Ounce (fl. oz)</option>
+                <option value="gn">Liquid Gallon</option>
                 </select>
     
             <select name="Units" id="units">
-                <option value="cm3">Cubic Centimetre (CM)^3</option>
-                <option value="m3">Cubic Metre (M)^3</option>
-                <option value="i3">Cubic Inch (I)^3</option>
-                <option value="ft3">Cubic Foot (Ft)^3</option>
-                <option value="l">Litre (L)</option>
-                <option value="gn">Gallon (G)</option>
+                <option value="m3">Cubic Metre (m)^3</option>
+                <option value="ml">Millilitre (ml)</option>
+                <option value="l">Litre (l)</option>
+                <option value="floz">Fluid Ounce (fl. oz)</option>
+                <option value="gn">Liquid Gallon</option>
             </select>
         </div>
 
 
         
-        <div class="units" id="weight_units">
+        <div class="units">
             
                 <select name="Units" id="units">
                     <option value="g">Gram (g)</option>
                     <option value="kg">Kilogram (kg)</option>
-                    <option value="t">Tonne (t)</option>
-                    <option value="oz">Ounce (oz)</option>
                     <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
+                    <option value="t">Tonne (t)</option>
+                    
+                    
                 </select>
                 
             <select name="Units" id="units">
-                <option value="g">Gram (g)</option>
-                <option value="kg">Kilogram (kg)</option>
-                <option value="t">Tonne (t)</option>
-                <option value="oz">Ounce (oz)</option>
-                <option value="lb">Pound (lb)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
+                    <option value="t">Tonne (t)</option>
                 
             </select>
         </div>
 
 
         
-        <div class="units" id="time_units">
+        <div class="units">
 
                 <select id="units">
                 <option value="s">Second</option>
                 <option value="min">Minute</option>
                 <option value="hour">Hour</option>
                 <option value="day">Day</option>
-                <option value="wk">Week</option>
+                <option value="week">Week</option>
                 <option value="mon">Month</option>
                 <option value="year">Year</option>
                 <option value="decade">Decade</option>
@@ -168,7 +168,7 @@
                 <option value="min">Minute</option>
                 <option value="hour">Hour</option>
                 <option value="day">Day</option>
-                <option value="wk">Week</option>
+                <option value="week">Week</option>
                 <option value="mon">Month</option>
                 <option value="year">Year</option>
                 <option value="decade">Decade</option>
@@ -176,9 +176,9 @@
         
         </div>
 
-        <div class="convertWrapper">
+            <div class="convertWrapper">
             <Button id="convertButton">Convert</Button>
-        </div>
+            </div>
         
 
     </div>

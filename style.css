@@ -47,11 +47,8 @@ cursor: pointer;
     
     display:none;
    justify-content: space-around;
-   gap: 7em;
-  
-    
+   gap: 7em;    
 }
-
 
 .units.active{
 display: flex;
@@ -61,7 +58,6 @@ display: flex;
 .convertWrapper{
     display: flex;
     grid-template-columns: 30%;
-
     justify-content: center;
 }
 
