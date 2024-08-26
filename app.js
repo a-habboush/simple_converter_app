@@ -80,15 +80,15 @@ switch(fromUnitLength) {
   switch(toUnitLength){
     
     case "km":
-        answerLength = lengthInMeters / 1000;  
+        answerLength = Math.round((lengthInMeters / 1000) * 100000) / 100000;  
       break;
 
     case "m":
-      answerLength = lengthInMeters;  
+      answerLength = Math.round((lengthInMeters) * 1000) / 1000;  
       break;
 
     case "cm":
-    answerLength = lengthInMeters * 100;
+    answerLength = Math.round((lengthInMeters * 100) * 100 ) / 100;
     break;
 
     case "mi":
