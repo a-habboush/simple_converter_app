@@ -13,12 +13,12 @@
     <div class="container">
 
         <div class="tabs">
-            <button class="tab_btn">Length</button>
-            <button class="tab_btn">Temp</button>
-            <button class="tab_btn">Area</button>
-            <button class="tab_btn">Volume</button>
-            <button class="tab_btn">Weight</button>
-            <button class="tab_btn">Time</button>
+            <button class="tab_btn" id="length_button">Length</button>
+            <button class="tab_btn" id="temp_button">Temp</button>
+            <button class="tab_btn" id="area_button">Area</button>
+            <button class="tab_btn" id="volume_button">Volume</button>
+            <button class="tab_btn" id="weight_button">Weight</button>
+            <button class="tab_btn" id="time_button">Time</button>
         </div>
         
     
@@ -26,12 +26,12 @@
 
             <div class="from_textbox">
             <p>From:</p> 
-            <input type="text" pattern="[0-9]*" inputmode="numeric" id="from_length"> 
+            <input type="text" pattern="[0-9]*" inputmode="numeric" id="inputTextbox"> 
             </div>
 
             <div class="to_textbox">
             <p>To:</p> 
-            <input type="text" readonly id="to_length">
+            <input type="text" readonly id="outputTextbox">
             </div>
         
         </div>
@@ -85,11 +85,9 @@
         <div class="units" id="area_units">
  
                 <select name="Units" id="units">
-                    <option value="sqcm">Square Centimetre (CM)^2</option>
                     <option value="sqm">Square Metre (M)^2</option>
                     <option value="sqkm">Square Kilometre (KM)^2</option>
                     <option value="acre">Acre</option>
-                    <option value="sqi">Square Inch (I)^2</option>
                     <option value="sqft">Square Foot (Ft)^2</option>
                     <option value="sqy">Square Yard (Y)^2</option>
                     <option value="sqmi">Square Mile (Mi)^2</option>
@@ -97,11 +95,9 @@
                 
         
             <select name="Units" id="units">
-                <option value="sqcm">Square Centimetre (CM)^2</option>
                     <option value="sqm">Square Metre (M)^2</option>
                     <option value="sqkm">Square Kilometre (KM)^2</option>
                     <option value="acre">Acre</option>
-                    <option value="sqi">Square Inch (I)^2</option>
                     <option value="sqft">Square Foot (Ft)^2</option>
                     <option value="sqy">Square Yard (Y)^2</option>
                     <option value="sqmi">Square Mile (Mi)^2</option>
